@@ -41,7 +41,7 @@ Add the trigger to your qb-radialmenu > config.lua (Anywhere you want someone to
 ```  
 Credits to MonkeyWhisper for creating the event
 
-## Images
+## Preview
 ![Preview Screenshot](https://i.imgur.com/cXjH8Rx.png)
 
 
