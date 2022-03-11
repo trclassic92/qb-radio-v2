@@ -54,6 +54,8 @@ Credits to MonkeyWhisper for creating the event
 - Replace current qb-radio with this version if you want to use it
 - Rename qb-radio-v2 to ----> qb-radio    (Make sure you rename the file or it will not work)
 
+- For a radio effect add this to your server.cfg  `setr voice_enableSubmix 1`
+
 
 # 3/10/2022 Changes
 Lastest Nopixel style radio
