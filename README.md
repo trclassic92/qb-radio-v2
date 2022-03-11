@@ -42,9 +42,13 @@ Add the trigger to your qb-radialmenu > config.lua (Anywhere you want someone to
 Credits to MonkeyWhisper for creating the event
 
 ## Images
-- [Google search link to radio](https://www.aircraftspruce.com/catalog/avpages/yaesuVertexFTA750L.php)
 ![Preview Screenshot](https://i.imgur.com/cXjH8Rx.png)
+
+
 - Preview of the radio https://www.youtube.com/watch?v=fYU_PKpAG6o
+
+# Location of image used
+- [Google search link to radio](https://www.aircraftspruce.com/catalog/avpages/yaesuVertexFTA750L.php)
 
 ## Installation
 - Replace current qb-radio with this version if you want to use it
