@@ -62,7 +62,7 @@ Lastest Nopixel style radio
 New UI
 New Inventory Image
 
-## Discord Support
+## Discord
 - [Join Discord](https://discord.gg/zRCdhENsHG)
 
 ## Original qb-radio
