@@ -48,11 +48,13 @@ Credits to MonkeyWhisper for creating the event
 
 ## Installation
 - Replace current qb-radio with this version if you want to use it
+- Rename qb-radio-v2 to ----> qb-radio    (Make sure you rename the file or it will not work)
 
-1/12/2022 (Radio Effects)
--  To add the new radio sounds go to `\pma-voice\ui`
 
-Inventory image - replace radio.png in your current inventory image folder with this one.
+# 3/10/2022 Changes
+Lastest Nopixel style radio
+New UI
+New Inventory Image
 
 ## Discord Support
 - [Join Discord](https://discord.gg/zRCdhENsHG)
