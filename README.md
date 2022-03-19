@@ -65,5 +65,8 @@ New Inventory Image
 ## Discord
 - [Join Discord](https://discord.gg/zRCdhENsHG)
 
+## Support
+- [Ko-fi Link](https://ko-fi.com/trclassic)
+
 ## Original qb-radio
 - [qb-radio](https://github.com/qbcore-framework/qb-radio)
