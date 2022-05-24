@@ -227,11 +227,9 @@ CreateThread(function()
     while true do
         Wait(1000)
         if LocalPlayer.state.isLoggedIn and onRadio then
-            QBCore.Functions.TriggerCallback('qb-radio:server:GetItem', function(hasItem)
-                if not hasItem or PlayerData.metadata.isdead or PlayerData.metadata.inlaststand then
-                    if RadioChannel ~= 0 then
-                        leaveradio()
-                    end
+            if not hasRadio or PlayerData.metadata.isdead or PlayerData.metadata.inlaststand then
+                if RadioChannel ~= 0 then
+                    leaveradio()
                 end
             end
         end
