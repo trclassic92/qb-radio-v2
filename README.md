@@ -26,7 +26,7 @@ qb-radio Nopixel Inspired Radio (v2) for qb-core
 
 ## Features
 - Latest Nopixel Inspired Radio
-- Radialmenu join channel option 1 - 6 (Credits - [MonkeyWhisper](https://github.com/MonkeyWhisper))
+- Radialmenu join channel option 1 - 6
 - Inventory Image [qb-radio/imgforinvenotry]
 
 ## RadialMenu Events
