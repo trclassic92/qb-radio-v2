@@ -34,11 +34,11 @@ Add the trigger to your qb-radialmenu > config.lua (Anywhere you want someone to
 ```
             id = 'joinradio1',
             title = 'Channel 1',
-            icon = 'info-circle',
+            icon = 'radio',
             type = 'client',
             event = 'qb-radio:client:JoinRadioChannel1',
             shouldClose = true
-```  
+```
 Credits to MonkeyWhisper for creating the event
 
 ## Preview
