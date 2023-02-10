@@ -42,7 +42,6 @@ Add the trigger to your qb-radialmenu > config.lua (Anywhere you want someone to
             event = 'qb-radio:client:JoinRadioChannel1',
             shouldClose = true
 ```
-Credits to MonkeyWhisper for creating the event
 
 ## Preview
 ![Preview Screenshot](https://i.imgur.com/cXjH8Rx.png)
