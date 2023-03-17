@@ -235,7 +235,7 @@ end)
 RegisterCommand('openradio', function()
     if hasRadio then
         TriggerEvent('qb-radio:use')
-    elseif not hasRaido then
+    elseif not hasRadio then
         -- print('no radio')
     end
 
