@@ -150,7 +150,7 @@ RegisterNetEvent('qb-radio:onRadioDrop', function()
     end
 end)
 
-Citizen.CreateThread(function()
+CreateThread(function()
     local OpenRadioBind = Config.keyBind.useRadio
     if IsControlPressed(1, keybindControls[OpenRadioBind]) then
         TriggerClientEvent('qb-radio:use')
@@ -233,8 +233,14 @@ RegisterNUICallback("decreaseradiochannel", function(_, cb)
     end
 end)
 RegisterCommand('openradio', function()
-    TriggerEvent('qb-radio:use')
+    if hasRadio then
+        TriggerEvent('qb-radio:use')
+    elseif not hasRaido then
+        -- print('no radio')
+    end
+
 end)
+
 RegisterKeyMapping('openradio', 'Open Radio', 'keyboard', Config.keyBind.openRadio)
 RegisterKeyMapping('Volup1', 'Turn Radio Up', 'keyboard', Config.keyBind.volUp1)
 RegisterKeyMapping('Radiovoldown', 'Turn Radio Down', 'keyboard', Config.keyBind.radioVolDown)
