@@ -244,6 +244,8 @@ end)
 RegisterKeyMapping('openradio', 'Open Radio', 'keyboard', Config.keyBind.openRadio)
 RegisterKeyMapping('Volup1', 'Turn Radio Up', 'keyboard', Config.keyBind.volUp1)
 RegisterKeyMapping('Radiovoldown', 'Turn Radio Down', 'keyboard', Config.keyBind.radioVolDown)
+RegisterKeyMapping('RadioChannelUp+', 'Radio Channel Up', 'keyboard', Config.keyBind.RadioChannelUp)
+RegisterKeyMapping('RadioChannelDown-', 'Radio Channel Down', 'keyboard', Config.keyBind.RadioChannelDown)
 
 RegisterNUICallback('poweredOff', function(_, cb)
     leaveradio()
@@ -256,6 +258,29 @@ end)
 
 RegisterCommand('Radiovoldown', function()
     TriggerEvent('Voldown')
+end)
+
+RegisterCommand('RadioChannelUp+', function()
+    TriggerEvent('RadioChannelUp')
+end)
+RegisterCommand('RadioChannelDown-', function()
+    TriggerEvent('RadioChannelDown')
+end)
+
+RegisterNetEvent('RadioChannelUp', function()
+    if RadioChannel == RadioChannel then
+        RadioChannel = RadioChannel + 1
+        exports["pma-voice"]:setRadioChannel(RadioChannel)
+        QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
+    end
+end)
+
+RegisterNetEvent('RadioChannelDown', function()
+    if RadioChannel == RadioChannel then
+        RadioChannel = RadioChannel - 1
+        exports["pma-voice"]:setRadioChannel(RadioChannel)
+        QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
+    end
 end)
 
 RegisterNetEvent('Volup', function()
