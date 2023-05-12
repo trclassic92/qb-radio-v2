@@ -406,7 +406,7 @@ end)
 RegisterNetEvent('qb-radio:client:JoinRadioChannel6', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
-            local channel = 5
+            local channel = 6
             exports["pma-voice"]:setRadioChannel(channel)
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
@@ -422,7 +422,7 @@ end)
 RegisterNetEvent('qb-radio:client:JoinRadioChannel7', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
-            local channel = 5
+            local channel = 7
             exports["pma-voice"]:setRadioChannel(channel)
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
@@ -438,7 +438,7 @@ end)
 RegisterNetEvent('qb-radio:client:JoinRadioChannel8', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
-            local channel = 5
+            local channel = 8
             exports["pma-voice"]:setRadioChannel(channel)
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
@@ -454,7 +454,7 @@ end)
 RegisterNetEvent('qb-radio:client:JoinRadioChannel9', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
-            local channel = 5
+            local channel = 9
             exports["pma-voice"]:setRadioChannel(channel)
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
@@ -470,7 +470,7 @@ end)
 RegisterNetEvent('qb-radio:client:JoinRadioChannel10', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
-            local channel = 5
+            local channel = 10
             exports["pma-voice"]:setRadioChannel(channel)
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
