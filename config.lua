@@ -59,4 +59,5 @@ Config.messages = {
     ['decrease_radio_volume'] = 'The radio is already set to maximum volume',
     ['increase_radio_volume'] = 'The radio is already set to the lowest volume',
     ['increase_decrease_radio_channel'] = 'New channel ',
+    ['lowest_channel'] = 'You are at the lowest frequency',
 }
