@@ -223,15 +223,19 @@ RegisterNUICallback("increaseradiochannel", function(_, cb)
     cb("ok")
 end)
 
-RegisterNUICallback("decreaseradiochannel", function(_, cb)
-    if not onRadio then return end
-    local newChannel = RadioChannel - 1
-    if newChannel >= 1 then
-        exports["pma-voice"]:setRadioChannel(newChannel)
-        QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. newChannel, "success")
-        cb("ok")
+RegisterNetEvent('RadioChannelDown', function()
+    if RadioChannel == 1 then
+            exports["pma-voice"]:setRadioChannel(1)
+            QBCore.Functions.Notify(Config.messages["lowest_channel"], "Error")
+        else
+        if RadioChannel == RadioChannel then
+            RadioChannel = RadioChannel - 1
+            exports["pma-voice"]:setRadioChannel(RadioChannel)
+            QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
+        end
     end
 end)
+
 RegisterCommand('openradio', function()
     if hasRadio then
         TriggerEvent('qb-radio:use')
