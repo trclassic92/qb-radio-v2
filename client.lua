@@ -225,14 +225,15 @@ end)
 
 RegisterNetEvent('RadioChannelDown', function()
     if RadioChannel == 1 then
-            exports["pma-voice"]:setRadioChannel(1)
-            QBCore.Functions.Notify(Config.messages["lowest_channel"], "Error")
-        else
-        if RadioChannel == RadioChannel then
-            RadioChannel = RadioChannel - 1
-            exports["pma-voice"]:setRadioChannel(RadioChannel)
-            QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
+        exports["pma-voice"]:setRadioChannel(1)
+        QBCore.Functions.Notify(Config.messages["lowest_channel"], "Error")
+    else
+        RadioChannel = RadioChannel - 1
+        if RadioChannel < 1 then
+            RadioChannel = 1
         end
+        exports["pma-voice"]:setRadioChannel(RadioChannel)
+        QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
     end
 end)
 
